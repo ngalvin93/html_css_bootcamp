@@ -1,0 +1,133 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER AND NAVIGATION */
+
+/* Backgound image in header */
+header {
+    background-image: url(img/atl.png);
+    background-size: cover;
+    height: 400px;
+}
+header {
+    padding: 30px;
+    position: relative; /* not sure if this is necessary */
+}
+/* Navigation ul */
+nav ul {
+    float: right;
+}
+/* Navigation li */
+nav li {
+    display: inline-block;
+    padding-left: 20px;
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+/* Logo, title and slogan */
+.header-content {
+    display: block;
+    margin: 0 auto;
+    width: 33.33%;
+    position: absolute; /* this element is positioned relatively to the header tag */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* DigitalCrafts header logo */
+.header-content img {
+    width: 175px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+/* Header title */
+.header-content h1 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 400;
+    color: white;
+    padding-bottom: 20px;
+}
+/* Header slogan */
+.header-content p {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+/* Header down arrow */
+.down-arrow {
+    display: block;
+    position: absolute;
+    margin: 0 auto;
+    width: 25px;
+    left: 50%;
+}
+
+/* BODY INFORMATION */
+
+/* Body heading text */
+.information h1 {
+    margin: 60px 60px;
+    text-align: center;
+    font-weight: 400;
+    color: #494949;
+}
+/* Dividing into three columns */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+,row::after { /* not sure how useful this is */
+    content: "";
+    display: block;
+    clear: both;
+}
+/* Column text */
+.column h2, .column p {
+    text-align: center;
+    color: #494949;
+}
+/* Circle images */
+.column img {
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+/* Column title */
+h2 {
+    font-size: 35px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+/* FOOTER */
+
+/* Background */
+footer {
+    clear: left; /* not sure what this did, but it cleared the problem with the floats before */
+    display: block;
+    background-color: #494949;
+    padding: 20px 10px;
+}
+/* Footer sitemap */
+footer li {
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding: 20px;
+}
+/* Copyright */
+small {
+    text-align: center;
+    color: white;
+}
